@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress - Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FoodieExpress</h1>
+            <nav>
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Delicious Food Delivered Fast</h2>
+            <p>Order from your favorite restaurants and get it delivered to your doorstep.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div id="categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="main">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div id="menuItems" class="menu-grid">
+                <!-- Menu items will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <div id="cartSidebar" class="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+        <div id="cartTotal">Total: $0.00</div>
+        <button id="checkoutBtn">Checkout</button>
+        <button id="closeCartBtn">Close</button>
+    </div>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="authTitle">Login</h3>
+            <form id="authForm">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="text" id="name" placeholder="Name" style="display:none;">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Checkout</h3>
+            <form id="checkoutForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="tel" placeholder="Phone" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 FoodieExpress. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
