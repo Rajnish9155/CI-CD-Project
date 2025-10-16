@@ -4,7 +4,7 @@ const menuItems = [
         id: 1,
         name: "Caesar Salad",
         category: "appetizers",
-        price: 8.99,
+        price: 7.99,
         description: "Crisp romaine lettuce with parmesan cheese and croutons",
         image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
